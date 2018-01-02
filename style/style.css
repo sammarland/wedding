@@ -9,3 +9,20 @@ a:hover {
 a:visited {
     color: black;
 }
+
+.main-block {
+    text-align: center;
+    height: 400px;
+    background-color: #abd17b; 
+    font-family: 'Amatic SC', cursive;   
+}
+
+.block {
+    height: 400px;
+    text-align: center;
+    color: white;
+}
+
+.footer-block {
+    background-color: #c690dd;
+}
