@@ -17,7 +17,7 @@ app.get('/style/style.css', function(req, res) {
     res.sendFile(path.join(__dirname + '/style/style.css'));
 });
 
-app.get('.well-known/acme-challenge/8ZxNC6kM3QOdauwPV5X1JN3yCK0VgWXZX_61iAayNq0', function(req, res) {
+app.get('/.well-known/acme-challenge/8ZxNC6kM3QOdauwPV5X1JN3yCK0VgWXZX_61iAayNq0', function(req, res) {
     res.sendFile(path.join(__dirname + '/data.txt'));
 });
 
