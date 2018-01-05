@@ -4,6 +4,8 @@ var path = require('path');
 
 const PORT = process.env.OPENSHIFT_NODEJS_IP || process.env.PORT || 5000;
 
+
+
 app.get('/', function(req, res) {
     res.sendFile(path.join(__dirname + '/index.html'));
 });
@@ -22,3 +24,5 @@ app.get('/.well-known/acme-challenge/8ZxNC6kM3QOdauwPV5X1JN3yCK0VgWXZX_61iAayNq0
 });
 
 app.listen(PORT);
+
+console.log("Listening on " + PORT);
