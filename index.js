@@ -2,9 +2,9 @@ var express = require('express');
 var app = express();
 var path = require('path');
 
-const PORT = process.env.OPENSHIFT_NODEJS_IP || process.env.PORT || 5000;
+const PORT = process.env.OPENSHIFT_NODEJS_PORT || process.env.PORT || 5000;
 
-
+console.log("OpenShift NodeJS PORT " + process.env.OPENSHIFT_NODEJS_PORT);
 
 app.get('/', function(req, res) {
     res.sendFile(path.join(__dirname + '/index.html'));
