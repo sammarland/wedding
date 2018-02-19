@@ -11,6 +11,18 @@ app.get('/', function(req, res) {
     res.sendFile(path.join(__dirname + '/index.html'));
 });
 
+app.get('/travel', function(req, res) {
+    res.sendFile(path.join(__dirname + '/travel.html'));
+});
+
+app.get('/accomodation', function(req, res) {
+    res.sendFile(path.join(__dirname + '/accomodation.html'));
+});
+
+app.get('/gifts', function(req, res) {
+    res.sendFile(path.join(__dirname + '/gifts.html'));
+});
+
 app.get('/rsvp', function(req, res) {
     res.sendFile(path.join(__dirname + '/rsvp.html'));
 });
@@ -23,6 +35,8 @@ app.get('/style/style.css', function(req, res) {
 app.get('/.well-known/acme-challenge/8ZxNC6kM3QOdauwPV5X1JN3yCK0VgWXZX_61iAayNq0', function(req, res) {
     res.sendFile(path.join(__dirname + '/data.txt'));
 });
+
+app.use(express.static('images'))
 
 app.listen(PORT);
 
