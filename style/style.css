@@ -1,5 +1,5 @@
 html {
-    font-size: 1.1rem;
+    font-size: 1.15rem;
   }
 
 a:link {
@@ -54,6 +54,44 @@ a:visited {
     -moz-background-size: cover;
     background-size: cover;
     -o-background-size: cover;
+}
+
+.center-image-home-footer {
+    background: url('/cornwall.jpg') no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+    height: 600px;
+}
+
+
+.center-image-travel-footer {
+    background: url('/beach.jpg') no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+    height: 600px;
+}
+
+.center-image-accom-footer {
+    background: url('/scarfell.jpg') no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+    height: 600px;
+}
+
+
+.center-image-gifts-footer {
+    background: url('/plane.jpg') no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+    height: 600px;
 }
 
 .center-image-travel {
