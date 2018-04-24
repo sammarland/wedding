@@ -6,15 +6,12 @@ var https = require('https');
 
 
 const PORT = process.env.PORT || process.env.OPENSHIFT_NODEJS_PORT || 8080,
-    ip   = process.env.IP   || process.env.OPENSHIFT_NODEJS_IP || '0.0.0.0';
-    privkey = process.env.privkey || 'certs/localhost.key'
-    cert = process.env.cert || 'certs/localhost.cert'
+      PRIVKEY = process.env.PRIVKEY || 'certs/localhost.key'
+      CERT = process.env.CERT || 'certs/localhost.cert'
     
 // Load certs
-var privateKey = fs.readFileSync( privkey );
-var certificate = fs.readFileSync( cert );
-
-console.log("OpenShift NodeJS PORT " + process.env.OPENSHIFT_NODEJS_PORT);
+var privateKey = fs.readFileSync( PRIVKEY );
+var certificate = fs.readFileSync( CERT );
 
 app.get('/', function(req, res) {
     res.sendFile(path.join(__dirname + '/index.html'));
@@ -48,8 +45,8 @@ app.get('/.well-known/acme-challenge/8ZxNC6kM3QOdauwPV5X1JN3yCK0VgWXZX_61iAayNq0
 app.use(express.static('images'))
 
 https.createServer({
-    key: privateKey,
-    cert: certificate
+    key: PRIVKEY,
+    cert: CERT
 }, app).listen(PORT);
 
 console.log("Listening on " + PORT);
