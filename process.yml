@@ -10,4 +10,5 @@ apps:
       NODE_ENV: production
       PORT: 443
       PRIVKEY: "/etc/letsencrypt/live/samandhettie.com/privkey.pem"
-      CERT: "/etc/letsencrypt/live/samandhettie.com/fullchain.pem"
+      CERT: "/etc/letsencrypt/live/samandhettie.com/cert.pem"
+      CHAIN: "/etc/letsencrypt/live/samandhettie.com/fullchain.pem"

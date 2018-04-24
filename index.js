@@ -8,10 +8,12 @@ var https = require('https');
 const PORT = process.env.PORT || process.env.OPENSHIFT_NODEJS_PORT || 8080,
       PRIVKEY = process.env.PRIVKEY || 'certs/localhost.key'
       CERT = process.env.CERT || 'certs/localhost.cert'
+      CHAIN = process.env.CHAIN || ''
     
 // Load certs
-var privateKey = fs.readFileSync( PRIVKEY );
-var certificate = fs.readFileSync( CERT );
+var privateKey = fs.readFileSync( PRIVKEY, 'utf8');
+var certificate = fs.readFileSync( CERT, 'utf8' );
+var chain = fs.readFileSync( CHAIN, 'utf8' );
 
 app.get('/', function(req, res) {
     res.sendFile(path.join(__dirname + '/index.html'));
@@ -46,7 +48,8 @@ app.use(express.static('images'))
 
 https.createServer({
     key: PRIVKEY,
-    cert: CERT
+    cert: CERT,
+    ca: CHAIN
 }, app).listen(PORT);
 
 console.log("Listening on " + PORT);
