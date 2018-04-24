@@ -1,6 +1,7 @@
 apps:
   - script   : index.js
     instances: 4
+    name: wedding
     exec_mode: cluster
     watch: true
     env_dev:
@@ -11,4 +12,4 @@ apps:
       PORT: 443
       PRIVKEY: "/etc/letsencrypt/live/samandhettie.com/privkey.pem"
       CERT: "/etc/letsencrypt/live/samandhettie.com/cert.pem"
-      CHAIN: "/etc/letsencrypt/live/samandhettie.com/fullchain.pem"
+      CHAIN: "/etc/letsencrypt/live/samandhettie.com/chain.pem"

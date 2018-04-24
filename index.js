@@ -47,9 +47,9 @@ app.get('/.well-known/acme-challenge/8ZxNC6kM3QOdauwPV5X1JN3yCK0VgWXZX_61iAayNq0
 app.use(express.static('images'))
 
 https.createServer({
-    key: PRIVKEY,
-    cert: CERT,
-    ca: CHAIN
+    key: privateKey,
+    cert: certificate,
+    ca: chain
 }, app).listen(PORT);
 
 console.log("Listening on " + PORT);
