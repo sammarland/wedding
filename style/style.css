@@ -54,6 +54,8 @@ a:visited {
     -moz-background-size: cover;
     background-size: cover;
     -o-background-size: cover;
+    height: 100%;
+    overflow: hidden;
 }
 
 .center-image-home-footer {
@@ -82,6 +84,8 @@ a:visited {
     background-size: cover;
     -o-background-size: cover;
     height: 600px;
+    height: 100%;
+    overflow: hidden;
 }
 
 
@@ -91,7 +95,8 @@ a:visited {
     -moz-background-size: cover;
     background-size: cover;
     -o-background-size: cover;
-    height: 600px;
+    height: 100%;
+    overflow: hidden;
 }
 
 .center-image-travel {
@@ -100,6 +105,8 @@ a:visited {
     -moz-background-size: cover;
     background-size: cover;
     -o-background-size: cover;
+    height: 100%;
+    overflow: hidden;
 }
 
 .center-image-accomodation {
@@ -108,6 +115,8 @@ a:visited {
     -moz-background-size: cover;
     background-size: cover;
     -o-background-size: cover;
+    height: 100%;
+    overflow: hidden;
 }
 
 .center-image-gifts {
@@ -116,4 +125,6 @@ a:visited {
     -moz-background-size: cover;
     background-size: cover;
     -o-background-size: cover;
+    height: 100%;
+    overflow: hidden;
 }
