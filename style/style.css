@@ -64,7 +64,8 @@ a:visited {
     -moz-background-size: cover;
     background-size: cover;
     -o-background-size: cover;
-    height: 600px;
+    height: 100%;
+    overflow: hidden;
 }
 
 
@@ -74,7 +75,8 @@ a:visited {
     -moz-background-size: cover;
     background-size: cover;
     -o-background-size: cover;
-    height: 600px;
+    height: 100%;
+    overflow: hidden;
 }
 
 .center-image-accom-footer {
@@ -83,7 +85,6 @@ a:visited {
     -moz-background-size: cover;
     background-size: cover;
     -o-background-size: cover;
-    height: 600px;
     height: 100%;
     overflow: hidden;
 }
