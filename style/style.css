@@ -101,7 +101,7 @@ a:visited {
 }
 
 .center-image-travel {
-    background: url('/winter-car.jpeg') no-repeat center center scroll;
+    background: url('/winter-car.jpg') no-repeat center center scroll;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
