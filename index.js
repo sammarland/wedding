@@ -3,6 +3,7 @@ var app = express();
 var path = require('path');
 var fs = require('fs');
 var https = require('https');
+var compression = require('compression')
 
 
 const PORT = process.env.PORT || process.env.OPENSHIFT_NODEJS_PORT || 8080,
@@ -14,6 +15,8 @@ const PORT = process.env.PORT || process.env.OPENSHIFT_NODEJS_PORT || 8080,
 var privateKey = fs.readFileSync( PRIVKEY, 'utf8');
 var certificate = fs.readFileSync( CERT, 'utf8' );
 var chain = fs.readFileSync( CHAIN, 'utf8' );
+
+app.use(compression())
 
 app.get('/', function(req, res) {
     res.sendFile(path.join(__dirname + '/index.html'));
